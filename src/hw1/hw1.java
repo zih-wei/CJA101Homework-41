@@ -18,22 +18,39 @@ public class hw1 {
 	public static void main(String[] args) {
 	
 	int num1 = 12, num2 = 6;
-	System.out.println(num1 + num2);
-	System.out.println(num1 * num2);
-	System.out.println("===============");
+	System.out.println("和:" + num1 + num2);
+	System.out.println("積:" + num1 * num2);
+	System.out.println("==============================");
 	
 	int num3 = 200, num4 = 12;
-	System.out.println(num3 / num4 );
-	System.out.println(num3 % num4 );
-	System.out.println("===============");
+	System.out.println(num3 / num4 + "打" + num3 % num4 + "顆");	
+	System.out.println("==============================");
 	
 	int num5 = 256559;
 	int days = num5/(60*60*24);
-	num5 = num5%(60*60*24);
-	int hours = 
 	
-	System.out.println( + "");
-	System.out.println("===============");
+	num5 = num5%(60*60*24);
+	int hours = num5/(60*60);	
+	
+	num5 = num5%(60*60);
+	int mins = num5/60;
+	int	secs = num5%60;
+			
+	System.out.println( days + "天" + hours + "小時" + mins + "分" + secs + "秒");	
+	System.out.println("==============================");
+
+	double pi = 3.1415;		
+	System.out.println("圓面積:" + 5 * 5 * pi );
+	System.out.println("圓周長:" + 5 * 2 * pi );
+	System.out.println("==============================");
+	
+	int num6 = 1500000;
+	System.out.println("本金加利息共:" + num6*Math.pow(1.02, 10) );
+	System.out.println("==============================");
+	
+	System.out.println(5 + 5);   // 10, 數字相加
+	System.out.println(5 + '5'); // 58, 字元'5' unicode 為53
+	System.out.println(5 + "5"); // 55, 先印數字5再印字串5
 	
 	}
 }
